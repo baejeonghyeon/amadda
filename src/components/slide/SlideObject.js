@@ -1,19 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './SlideObject.css';
 import LineIcon from "react-lineicons";
 
 const SlideObject = (props) => {
-  const [slidePx, setSlidePx] = useState(0);
-
   return(
-    <React.Fragment>
-      <div>{props.onCurrentCategory}</div>
-      <div className='slide-object'>
+    <div>
+      <div className='event-box'>
+        <div className='event'>
+          <div className='event-image'>
+            <div className='event-image-text'>{props.onCurrentCategory}1</div>
+          </div>
+        </div>
+        <div className='event'>
+          <div className='event-image'>
+            <div className='event-image-text'>{props.onCurrentCategory}2</div>
+          </div>
+        </div>
+        <div className='event'>
+          <div className='event-image'>
+            <div className='event-image-text'>{props.onCurrentCategory}3</div>
+          </div>
+        </div>
+      </div>
+      {/* <div className='slide-object'>
         <button className='slide-button'><LineIcon name="chevron-left"></LineIcon></button>
         
         <button className='slide-button'><LineIcon name="chevron-right"></LineIcon></button>
-      </div>
-    </React.Fragment>
+      </div> */}
+    </div>
   )
 };
 

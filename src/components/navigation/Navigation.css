@@ -2073,6 +2073,16 @@ top: -1px;
   font-size: 14px;
 }
 
+.header .main-menu-search .navbar-search{
+  display: flex;
+}
+
+.header .main-menu-search .search-btn{
+  width: 45px;
+  height: 45px;
+  align-items: center;
+}
+
 .header .main-menu-search .search-btn button {
   background-color: rgb(240, 88, 32);
   color: #fff;
@@ -2081,8 +2091,8 @@ top: -1px;
   padding: 0;
   font-size: 20px;
   border: 0;
+  margin: 20px;
   border-radius: 0 4px 4px 0;
-  margin-left: -2px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   font-size: 18px;

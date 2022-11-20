@@ -31,7 +31,7 @@ const Navigation = (props) => {
 
                         {props.authState === true &&
                           <ul className="useful-links">
-                            <li><a href="purchase_history.html">구매 내역</a></li>
+                            
                             <li><a href="purchase_cycle.html">구매주기 설정 사항</a></li>
                           </ul>
                         }
@@ -44,15 +44,16 @@ const Navigation = (props) => {
                               <i className="lni lni-user"></i>
                               {props.authState === false && <span>안녕하세요!</span>}
                               {props.authState === true && <span>{props.userDetail.userEmail}님</span>}
+
+                              {/* 지금은 userEmail로 되어 있지만 닉네임을 가져와야 한다. */}
                           </div>
                             {props.authState === false &&
                                 <ul className="user-login">
-                                    
                                     <li>
                                         <Link to='/auth' className='removeUnderbar'>로그인</Link>
                                     </li>
                                     <li>
-                                        <Link to='/auth' className='removeUnderbar'>회원가입</Link>
+                                        <Link to='/new-member' className='removeUnderbar'>회원가입</Link>
                                     </li>
                                 </ul>
                             }
@@ -64,7 +65,7 @@ const Navigation = (props) => {
                                     <Link to='/' className='removeUnderbar' onClick={props.logout}>로그아웃</Link>
                                 </li>
                                 <li>
-                                    <a href="mypage.html">마이페이지</a>
+                                    <Link to='/my-page'>마이페이지</Link>
                                 </li>
                             </ul>
                             }
@@ -80,9 +81,9 @@ const Navigation = (props) => {
                 <div className="row align-items-center">
                     <div className="col-lg-3 col-md-3 col-7">
                         {/* <!-- Start Header Logo --> */}
-                        <a className="navbar-brand" href="index.html">
+                        <Link className="navbar-brand" to="/">
                           <img src={amaddaLogo} alt="Logo" />
-                        </a>
+                        </Link>
                         {/* <!-- End Header Logo --> */}
                     </div>
                     <div className="col-lg-5 col-md-7 d-xs-none">
@@ -91,16 +92,7 @@ const Navigation = (props) => {
                             {/* <!-- navbar search start --> */}
                             <div className="navbar-search search-style-5">
                                 <div className="search-select">
-                                    {/* <!-- <div class="select-position">
-                                        <select id="select1">
-                                            <option selected>All</option>
-                                            <option value="1">option 01</option>
-                                            <option value="2">option 02</option>
-                                            <option value="3">option 03</option>
-                                            <option value="4">option 04</option>
-                                            <option value="5">option 05</option>
-                                        </select>
-                                    </div> --> */}
+                           
                                 </div>
                                 <div className="search-input">
                                     <input type="text" placeholder="Search" />

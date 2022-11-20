@@ -1,21 +1,40 @@
-input{
+.info-card{
+  margin: 5% 0% 20% 0%;
+}
+
+.info-box{
+  margin-top: 50px;
+}
+
+
+
+/* .info-box .info-detail{
+  margin: 20px 0px 20px 10px;
   width: 300px;
-}
-
-input.info, p{
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-/* input.submit{
-  background-color: rgb(240, 88, 32);
-  cursor: pointer;
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #fff;
-  margin-bottom: 30px;
 } */
 
-input.submit{
+
+.info-box .info-detail.detail-check{
+  margin-right: 0;
+}
+
+
+.info-flex{
+  display: flex;
+  align-items: center;
+  
+
+}
+
+.info-flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.info-flex-center input{
   margin-left: 20px;
   padding: 0 20px 0 20px;
   border-radius: 8px;
@@ -25,7 +44,7 @@ input.submit{
   color: rgb(240, 88, 32);
 }
 
-input.submit:hover{
+.info-flex-center input:hover{
   margin-left: 20px;
   padding: 0 20px 0 20px;
   border-radius: 8px;
@@ -35,7 +54,7 @@ input.submit:hover{
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
 }
 
-input.submit:not(:hover){
+.info-flex-center input:not(:hover){
   margin-left: 20px;
   padding: 0 20px 0 20px;
   border-radius: 8px;
@@ -46,14 +65,18 @@ input.submit:not(:hover){
 }
 
 
-*{
-  font-family: 'Noto Sans KR', sans-serif;
+.info-title{
+  color: coral;
+  margin: 0px 0px 20px 10px;
 }
 
+.info-title-big{
+  margin: 0px 0px 20px 10px;
+}
 
-
-.errorText{
-  color: rgb(240, 88, 32);
-  font-size: 60%;
-  text-align: center;
+.checkbox{
+  margin: 0;
+  padding: 0;
+  width: 13px;
+  height: 13px;
 }

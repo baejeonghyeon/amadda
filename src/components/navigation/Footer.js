@@ -48,9 +48,9 @@ const Footer = () => {
                             <div className="single-footer f-link">
                                 <h3>연락처</h3>
                                 <ul>
-                                    <li><span>Tel: </span>0000-0000</li>
-                                    <li><span>Fax: </span>00-000-0000</li>
-                                    <li><span>Mail: </span>business_test@gmail.com</li>
+                                    <li><span>Tel: </span> 0000-0000</li>
+                                    <li><span>Fax: </span> 00-000-0000</li>
+                                    <li><span>Mail: </span> business_test@gmail.com</li>
                                 </ul>
                             </div>
                         </div>
